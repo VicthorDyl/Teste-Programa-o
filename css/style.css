@@ -1,0 +1,272 @@
+*{
+    width: 100%;
+}
+body{ 
+    overflow-x: hidden;
+}
+main{
+    width: 100%;
+}
+
+.conteudo img, .boxes img{
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px black;
+}
+/*Começo Header*/
+header{
+    width: 100%;
+    background-color: #0050c9;
+    margin-top: -8px;
+    margin-left: -8px;
+    vertical-align: middle;
+}
+header ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+header li{
+    color:white;
+    padding-right: 10px;
+    display: inline;
+}
+.num-contato {
+    width: 70%;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;  
+}
+.navegacao{
+    width: 100%;
+    background-color: white;
+    text-align: right;
+}
+.navegacao img{
+    width: 90px;
+    display: block;
+    padding-bottom: 0px;
+    padding-top: 25px;
+}
+
+.navegacao ul{
+    width: 70%;
+    list-style: none;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.navegacao ul li{
+    width: 110px;
+    padding: 0px 5px;
+    color: gray;
+    float: right;
+    display: block;
+    text-transform: uppercase;
+}
+
+.navegacao a{
+    color: gray;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.014);
+}
+
+.navegacao ul ul{
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0050c9;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 600;
+}
+
+.navegacao ul li:hover ul{
+    visibility: visible;
+}
+
+.navegacao ul ul li{
+    width: 120px;
+    padding-right: 25px;
+    float: none;
+
+}
+
+.navegacao ul ul li a{
+    color: white;
+    text-align: left;
+    text-transform: initial;
+}
+
+.navegacao ul ul li a:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.041);
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.692);
+}
+
+a:link{
+    text-decoration: none;
+}
+/*Fim Header*/
+
+/*Começo Conteudo*/
+h2{
+    text-transform: uppercase;
+    color: grey;
+}
+p, li{
+    color: grey;
+}
+
+.container{
+    padding-bottom: 40px;
+}
+.conteudo{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.conteudo h2,li,p{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+.conteudo ul{
+    width: 68%;
+    width: 90%;
+}
+
+.conteudo img{
+    float: right;
+}
+
+.boxes{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.boxes div{
+    width: 196px;
+    height: 163px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.boxes img{
+    width: 100%;
+    height: 163px;
+}
+
+.boxes a{
+    color: cornflowerblue;
+}
+.boxes a:hover{
+    color: rgba(100, 148, 237, 0.479);
+}
+
+/*Fim Conteúdo*/
+
+/*Começo Footer*/
+footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: -15px;
+    margin-left: -8px;
+    background-color: grey;
+}
+footer h3{
+    color: white;
+    text-transform: uppercase;
+    padding: 45px 0px;
+}
+
+.navegacao-footer ul{
+    width: 70%;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navegacao-footer li{
+    color: gray;
+    display: inline;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.navegacao-footer a{
+    color: white;
+}
+
+.navegacao-footer a:hover{
+    color: rgba(255, 255, 255, 0.404);
+}
+/*Fim Footer*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    *{
+        width: 100%;
+    }
+    .navegacao a{
+        font-size: 12px;
+        width: auto;
+    }
+    .boxes-conteudo{
+        margin-left: 90px;
+    }
+    footer{
+        font-size: small;
+    }
+    h3{
+        margin-left: 10px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .boxes-conteudo{
+        padding-bottom: 100px;
+        margin-left: 50px;
+    }
+    .conteudo img{
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .conteudo img{
+        float: none;
+        display: block;
+    }
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .conteudo img{
+        float: right;
+        max-width: 325px;
+        max-height: 212px;
+        margin-top: -230px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .conteudo img{
+        margin-top: -240px;
+        width: 325px;
+        height: 212px;
+    }
+}
